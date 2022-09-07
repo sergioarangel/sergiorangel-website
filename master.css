@@ -1,7 +1,7 @@
-@keyframes transitionIn {
+@keyframes transition {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(10px);
     }
     
     to{
@@ -14,12 +14,35 @@ body {
     background-color: #7E7E7E;
     font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #000000
-    animation: transitionIn 0.75s;
+    
+}
+
+a {
+    color: black;
+    transition: .5s;
+}
+
+a:hover {
+    color: white;
+    transition: .5s;
+}
+
+p {
+    animation-name: transition;
+    animation-duration: 1s;
+    #padding-left: 250px;
+    #padding-right: 250px;
 }
 
 h1 {
     color: #000000;
-    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Segoe UI,sans-serif;
+    animation-name: transition;
+    animation-duration: 1s;
+}
+
+h2 {
+    font-family: Segoe,sans-serif;
 }
 
 .rec {
@@ -35,5 +58,6 @@ h1 {
 
 table, td, th {
     border: 0px solid;
+    text-decoration: none;
 }
 
